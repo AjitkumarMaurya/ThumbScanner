@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/_12sdp"
+    android:paddingRight="@dimen/_12sdp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".activity.FormActivity"
+    tools:showIn="@layout/app_bar_form">
+
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/spacing_medium"
+        android:layout_weight="1"
+        android:text=" Form Fill Up "
+        android:textSize="@dimen/_15ssp"
+        android:textColor="@color/blue_grey_300" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:text="Aadhaar No."
+
+        android:textAlignment="center"
+        android:textSize="@dimen/_11ssp"
+        android:textColor="@color/blue_grey_200" />
+
+    <android.support.design.widget.TextInputEditText
+        android:layout_width="match_parent"
+        android:id="@+id/text_edit_aadhaar"
+        android:layout_height="0dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginRight="-4dp"
+        android:layout_weight="1.4"
+        android:inputType="numberDecimal"
+        android:maxLength="12"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/blue_grey_800"
+        android:theme="@style/EditText.Green" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:text="Rashan Card No."
+        android:textAlignment="center"
+        android:textSize="@dimen/_11ssp"
+        android:textColor="@color/blue_grey_200" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/text_edit_rashan"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginRight="-4dp"
+        android:layout_weight="1.4"
+        android:inputType="numberDecimal"
+        android:maxLength="15"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/blue_grey_800"
+        android:theme="@style/EditText.Green" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:text="Area Code"
+        android:textAlignment="center"
+        android:textSize="@dimen/_11ssp"
+        android:textColor="@color/blue_grey_200" />
+
+    <android.support.design.widget.TextInputEditText
+        android:id="@+id/text_edit_userCode"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="-4dp"
+        android:layout_marginRight="-4dp"
+        android:layout_weight="1.4"
+        android:inputType="text"
+        android:maxLength="14"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:textColor="@color/blue_grey_800"
+        android:theme="@style/EditText.Green" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4sdp"
+        android:layout_weight="1">
+
+        <TextView
+            android:textSize="@dimen/_11ssp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text=" Left thumb"/>
+
+        <TextView
+            android:textSize="@dimen/_11ssp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:text=" Right thumb"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:padding="@dimen/_4sdp"
+        android:layout_weight="6">
+
+        <LinearLayout
+            android:id="@+id/lin_left"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:background="@color/grey_10">
+
+            <TextView
+                android:id="@+id/tv_left_text"
+                android:textSize="@dimen/_10ssp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Click to add left thumb"/>
+
+            <ImageView
+                android:id="@+id/iv_left"
+                android:visibility="gone"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="0.2" />
+
+
+        <LinearLayout
+            android:id="@+id/lin_right"
+            android:layout_width="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+            android:background="@color/grey_10">
+
+            <TextView
+                android:id="@+id/tv_right_text"
+                android:textSize="@dimen/_10ssp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Click to add right thumb"/>
+
+            <ImageView
+                android:id="@+id/iv_right"
+                android:visibility="gone"
+                android:src="@mipmap/ic_launcher"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.5"
+        android:layout_above="@id/vi"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/btn_rounded_green_300"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textStyle="bold" />
+
+
+    <View
+        android:id="@+id/vi"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_weight="0.1" />
+
+
+</LinearLayout>
+
+
